@@ -1,0 +1,15 @@
+name = menu-categorias
+description = Menu de Categorias
+core = 7.x
+package = Features
+version = 7.x-2.0
+dependencies[] = features
+dependencies[] = menu
+dependencies[] = taxonomy_menu
+features[features_api][] = api:2
+features[menu_custom][] = management
+features[menu_custom][] = menu-categor-as
+features[menu_links][] = management_categoras:admin/structure/menu/manage/menu-categor-as
+features[menu_links][] = menu-categor-as_adornos:taxonomy/term/1
+features[menu_links][] = menu-categor-as_agendas:taxonomy/term/2
+features[menu_links][] = menu-categor-as_almohadas:taxonomy/term/3
