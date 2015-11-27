@@ -10,91 +10,74 @@
 function menu_categorias_menu_default_menu_links() {
   $menu_links = array();
 
-  // Exported menu link: management_categoras:admin/structure/menu/manage/menu-categor-as
-  $menu_links['management_categoras:admin/structure/menu/manage/menu-categor-as'] = array(
-    'menu_name' => 'management',
-    'link_path' => 'admin/structure/menu/manage/menu-categor-as',
-    'router_path' => 'admin/structure/menu/manage/%',
-    'link_title' => 'Categorías',
-    'options' => array(
-      'identifier' => 'management_categoras:admin/structure/menu/manage/menu-categor-as',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => 0,
-    'customized' => 0,
-    'parent_identifier' => 'management_menus:admin/structure/menu',
-  );
-  // Exported menu link: menu-categor-as_adornos:taxonomy/term/1
-  $menu_links['menu-categor-as_adornos:taxonomy/term/1'] = array(
-    'menu_name' => 'menu-categor-as',
-    'link_path' => 'taxonomy/term/1',
+  // Exported menu link: main-menu_adornos:taxonomy/term/16
+  $menu_links['main-menu_adornos:taxonomy/term/16'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'taxonomy/term/16',
     'router_path' => 'taxonomy/term/%',
     'link_title' => 'Adornos',
     'options' => array(
       'attributes' => array(
-        'title' => '',
+        'title' => 'Adornos',
       ),
-      'identifier' => 'menu-categor-as_adornos:taxonomy/term/1',
+      'identifier' => 'main-menu_adornos:taxonomy/term/16',
     ),
-    'module' => 'menu',
+    'module' => 'taxonomy_menu',
     'hidden' => 0,
     'external' => 0,
     'has_children' => 0,
     'expanded' => 1,
-    'weight' => 0,
-    'customized' => 1,
+    'weight' => 1,
+    'customized' => 0,
+    'parent_identifier' => 'main-menu_categorias:taxonomy/term/14',
   );
-  // Exported menu link: menu-categor-as_agendas:taxonomy/term/2
-  $menu_links['menu-categor-as_agendas:taxonomy/term/2'] = array(
-    'menu_name' => 'menu-categor-as',
-    'link_path' => 'taxonomy/term/2',
-    'router_path' => 'taxonomy/term/%',
-    'link_title' => 'Agendas',
-    'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
-      'identifier' => 'menu-categor-as_agendas:taxonomy/term/2',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 1,
-    'weight' => 0,
-    'customized' => 1,
-  );
-  // Exported menu link: menu-categor-as_almohadas:taxonomy/term/3
-  $menu_links['menu-categor-as_almohadas:taxonomy/term/3'] = array(
-    'menu_name' => 'menu-categor-as',
-    'link_path' => 'taxonomy/term/3',
+  // Exported menu link: main-menu_almohadas:taxonomy/term/15
+  $menu_links['main-menu_almohadas:taxonomy/term/15'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'taxonomy/term/15',
     'router_path' => 'taxonomy/term/%',
     'link_title' => 'Almohadas',
     'options' => array(
       'attributes' => array(
-        'title' => '',
+        'title' => 'Almohadas',
       ),
-      'identifier' => 'menu-categor-as_almohadas:taxonomy/term/3',
+      'identifier' => 'main-menu_almohadas:taxonomy/term/15',
     ),
-    'module' => 'menu',
+    'module' => 'taxonomy_menu',
     'hidden' => 0,
     'external' => 0,
     'has_children' => 0,
     'expanded' => 1,
     'weight' => 0,
+    'customized' => 0,
+    'parent_identifier' => 'main-menu_categorias:taxonomy/term/14',
+  );
+  // Exported menu link: main-menu_categorias:taxonomy/term/14
+  $menu_links['main-menu_categorias:taxonomy/term/14'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'taxonomy/term/14',
+    'router_path' => 'taxonomy/term/%',
+    'link_title' => 'Categorias',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Categorias',
+      ),
+      'identifier' => 'main-menu_categorias:taxonomy/term/14',
+    ),
+    'module' => 'taxonomy_menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 1,
+    'expanded' => 1,
+    'weight' => 1,
     'customized' => 1,
   );
 
   // Translatables
   // Included for use with string extractors like potx.
   t('Adornos');
-  t('Agendas');
   t('Almohadas');
-  t('Categorías');
+  t('Categorias');
 
   return $menu_links;
 }

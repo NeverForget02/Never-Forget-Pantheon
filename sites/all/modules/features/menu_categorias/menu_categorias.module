@@ -1,5 +1,7 @@
 <?php
 /**
  * @file
- * Drupal needs this blank file.
+ * Code for the menu-categorias feature.
  */
+
+include_once 'menu_categorias.features.inc';
