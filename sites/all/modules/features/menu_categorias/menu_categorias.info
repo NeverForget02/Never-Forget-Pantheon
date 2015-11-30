@@ -21,3 +21,4 @@ features[menu_links][] = main-menu_almohadas:taxonomy/term/15
 features[menu_links][] = main-menu_categorias:taxonomy/term/14
 features[taxonomy][] = category
 features[variable][] = pathauto_taxonomy_term_category_pattern
+project path = sites/all/modules/features
