@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Productos Recientes feature.
+ */
+
+include_once 'productos_recientes.features.inc';
