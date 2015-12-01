@@ -2,20 +2,25 @@
 // Variables
 //
 
-// Sprite
-$sprite-image: "../images/global-sprite";
-
 // Typography
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://fonts.googleapis.com/css?family=Griffy);
 
+$title: 'Raleway', sans-serif;
+$body: 'Lato', sans-serif;
+$logo: 'Griffy', cursive;
 
 // Colors
-
+$turquoise:#48AAA7;
+$white:#fff;
+$grey:#74686B;
+$black:#141414;
+$red:#DA5029;
 
 // Neat variables
-$max-width: 1200px;
-$grid-colums: 13;
+$max-width: 1090px;//desktop
+$tablet: 798px;//tablet
+$movil: 560px;//movil
 
-// Breakpoints
-$desktop: 1000px;
-$tablet: 700px;
-$mobile-large: 500px;
+

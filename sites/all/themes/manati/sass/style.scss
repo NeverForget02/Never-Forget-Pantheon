@@ -1,23 +1,26 @@
-//
-// Manatí Base Theme Styles
-// http://www.estudiomanati.com/
-//
+/*----------Indice-------------
+    #partials
+    #modules
 
-// Bibliotecas
-@import "bourbon";
-@import "neat";
+  Importar-las-hojas-scss
+*/
 
-// Google fonts
-// ...
-
-// Parciales
-
+//  #partials
+@import "partials/normalize";
 @import "partials/variables";
 @import "partials/mixins";
-@import "partials/placeholders";
 @import "partials/base";
-@import "partials/layout";
-@import "partials/components/forms/forms";
-@import "partials/components/forms/webforms";
 
-// @import ...
+//  #modules
+@import "partials/modules/navigation";
+@import "partials/modules/header";
+@import "partials/modules/search";
+@import "partials/modules/slider";
+@import "partials/modules/categories";
+@import "partials/modules/related-home";
+@import "partials/modules/products";
+@import "partials/modules/description";
+@import "partials/modules/detail-product";
+@import "partials/modules/footer";
+
+

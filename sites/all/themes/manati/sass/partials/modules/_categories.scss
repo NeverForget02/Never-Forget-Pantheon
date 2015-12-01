@@ -1,0 +1,115 @@
+/* ==|====================
+   Partials/Componentes/categories
+
+   -------INDEX--------
+   #Container of categories
+   #Title
+   #Content text
+   ======================= */
+
+/* #Container of categories
+   ========================================================================== */
+.main{
+	margin-top: 70px;
+	text-align: center;
+	@media( min-width: 560px){
+		text-align: left;
+	}
+}
+
+.views-row{
+	width: 70%;
+	display: inline-block;
+	height: 307px;
+	vertical-align: top;
+	text-align: center;
+	margin-right: 0;
+	margin-top: 20px;
+	box-shadow: 0 0 4px #000;
+
+	h2{
+		position: relative;
+		background-color: $turquoise;
+		bottom: -252px;
+		width: 100%;
+		padding: 10px;
+
+		a{
+			@include font-size(18);
+			text-align: left;
+			color: $white;
+		}
+
+		&:before{
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 0 21.5px 26px 21.5px;
+			border-color: transparent transparent $red transparent;
+			position: absolute;
+			top: -20px;
+			left: 20px;
+		}
+	}
+
+	@media(min-width: 560px){
+		width: 40%;
+		margin-right: 31px;
+		text-align: left;
+		&:nth-child(2n+1){
+			margin-right: 0;
+		}
+	}
+
+	@media (min-width: 1000px){
+		width: 25%;
+		margin-right: 180px;
+	}
+
+	@media (min-width: 1210px){
+		width: 21%;
+		margin-right: 30px;
+		&:nth-child(3n+1){
+			margin-right: 30px;
+		}
+		&:nth-child(2n+1){
+			margin-right: 30px;
+		}
+
+		&:nth-child(4n+4){
+			margin-right:0;
+		}
+	}
+}
+
+/* #Title
+   ========================================================================== */
+.block-views{
+	color: $red;
+}
+
+/* #Content text and triangle
+   ========================================================================== */
+.content-category-text{
+	position: relative;
+	background-color: $turquoise;
+	top: -3px;
+	width: 100%;
+	padding: 10px;
+
+	p{
+
+	}
+}
+
+.triangle{
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 21.5px 26px 21.5px;
+	border-color: transparent transparent $turquoise transparent;
+	position: absolute;
+	top: -20px;
+	left: 20px;
+
+}

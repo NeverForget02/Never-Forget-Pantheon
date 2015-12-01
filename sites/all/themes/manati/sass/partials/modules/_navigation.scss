@@ -1,0 +1,30 @@
+/* ==|====================
+   Partials/Componentes/Navigation
+
+   -------INDEX--------
+   #Container of navigation
+   #Navigation
+   ======================= */
+
+/* #Container of navigation
+   ========================================================================== */
+
+
+/* #Navigation
+   ========================================================================== */
+.menu{
+  padding: 20px 0;
+  text-align: center!important;
+
+  li{
+    display: inline-block;
+    vertical-align: top;
+  }
+
+	a{
+		@include font-size(14);
+		margin-left: 20px;
+		color: $grey;
+    text-transform: uppercase;
+	}
+}

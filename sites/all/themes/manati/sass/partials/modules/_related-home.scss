@@ -1,0 +1,62 @@
+/* ==|====================
+   Partials/Modules/product-home
+
+   -------INDEX--------
+   #Related
+   #content related product
+   #content product info
+   ======================= */
+
+/* #related
+   ========================================================================== */
+.related{
+	margin-top: 70px;
+	background-color: #f4f4f4;
+	width: 100%;
+	padding: 70px 0;
+}
+
+.product-title{
+	color: $turquoise;
+}
+
+/* #content product
+   ========================================================================== */
+.container-products{
+	width: 100%;
+	text-align: center;
+	@media(min-width: 1200px) {
+		text-align: left;
+	}
+}
+
+/* #content product info
+   ==========================================================================
+   *these styles aplly in list.html
+   */
+.content-product-info{
+	position: relative;
+	text-align: center;
+
+	span{
+		@include font-size(16);
+		font-family: $body;
+		color: $white;
+		@media(min-width: 560px){
+			@include font-size(23);
+		}
+		@media (min-width: 1200px){
+			@include font-size(16);
+		}
+	}
+}
+
+.triangle-left{
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 19.5px 22px 19.5px 0;
+	border-color: transparent $red transparent transparent;
+	position: absolute;
+	left: -22px;
+}

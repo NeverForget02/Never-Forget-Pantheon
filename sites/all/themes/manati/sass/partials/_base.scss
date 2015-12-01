@@ -1,91 +1,104 @@
-/*
- * Rules for base elements
- */
-
 html {
+  box-sizing: border-box;
   font-size: 62.5%;
+  font-family: Arial, Verdana, sans-serif;
+}
+.container{
+  max-width: $max-width;
+  padding-top: 73px;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 body {
+  padding: 0;
   margin: 0;
 }
-
-img {
-  width: inherit;
-  max-width: 100%;
-  height: auto;
-}
-
-p, li {
-  @include font-size(14);
-  color: #555;
-  line-height: 1.5;
-}
-
-p, ul, ol, dl {
-  margin: 0 0 0.5em 0;
-}
-
-ul, ol {
-  padding-left: 2em;
-}
-
-p {
-  overflow: hidden;
-}
-
-a {
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  margin-top: 0;
-}
-
-// Tablas
-table {
-  width: 100%;
-  border-collapse: collapse;
-  @include font-size(14);
-}
-
-th, td {
-  padding: 0.5em;
-}
-
-/*
- * Rules for base drupal elements
- */
-
-.element-invisible {
-  @extend %hidden;
-}
-
-// Tabs
-.tabs {
-  padding: 0;
-  overflow: hidden;
-  border-bottom: 1px solid #ccc;
-  margin: 10px 0;
-  li {
-    list-style-type: none;
-    float: left;
+.main-content{
+  max-width: $tablet;
+  margin: 0 auto;
+  @media(min-width: 319px){
+    max-width: 340px;
   }
-  a {
-    color: #333;
-    @include font-size(14);
-    padding-right: 20px;
-    &.active {
-      color: #000;
-      font-weight: 600;
-    }
-    &:hover {
-      color: #000;
-      text-decoration: none;
-    }
+  @media(min-width: 420px){
+    max-width: 500px;
+  }
+  @media(min-width: 560px){
+    max-width: 527px;
+  }
+  @media (min-width: 680px){
+    max-width: $movil;
+  }
+  @media (min-width: 780px){
+    max-width: $tablet;
+  }
+  @media (min-width: 1000px){
+    max-width: $max-width;
+  }
+}
+
+//  #text-color
+p{
+  font-family: $body;
+  @include font-size(14);
+  margin:0;
+}
+//all li
+li{
+  list-style: none;
+}
+//  #all-the-a
+a{
+  text-decoration: none;
+  font-family: $title;
+}
+
+h2{
+  @include font-size(30);
+  font-family: $title;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  margin-top: 0;
+  text-align: center;
+}
+
+h3{
+  @include font-size(25);
+  font-family: $title;
+}
+
+h4{
+  @include font-size(16);
+  font-family: $title;
+  color: $white;
+  @media( min-width: 560px){
+    @include font-size(23);
+  }
+  @media( min-width: 1200px){
+    @include font-size(18);
+  }
+}
+
+.submitted{
+  display: none;
+}
+
+.comment-add{
+  a{
+    display: none;
+  }
+}
+.content-title{
+  text-align: center;
+
+  span{
+    @include font-size(17);
+    color: $grey;
+    font-family: $body;
+  }
+
+  p{
+    margin: 10px 0;
   }
 }

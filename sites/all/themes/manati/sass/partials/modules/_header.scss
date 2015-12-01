@@ -1,0 +1,66 @@
+/* ==|====================
+   Partials/Modules/Navigation
+
+   -------INDEX--------
+   #header-content
+   ======================= */
+
+/* #Header
+   ========================================================================== */
+.header{
+  max-width: $tablet;
+  margin: 0 auto;
+  @media(min-width: 319px){
+    max-width: 340px;
+  }
+  @media(min-width: 420px){
+    max-width: 500px;
+  }
+  @media(min-width: 560px){
+    max-width: 527px;
+  }
+  @media (min-width: 680px){
+    max-width: $movil;
+  }
+  @media (min-width: 780px){
+    max-width: $tablet;
+  }
+  @media (min-width: 1000px){
+    max-width: $max-width;
+  }
+}
+
+.header-content{
+  width: 100%;
+  text-align: center;
+
+  img{
+    width: 50%;
+    margin: 10px 0;
+    @media (min-width: 560px){
+      width: 40%;
+      margin: 10px 0 10px 33px;
+    }
+    @media (min-width: 1025px){
+      width: 35%;
+      margin: 10px 0 10px 33px;
+    }
+  }
+  h1{
+    display: none;
+  }
+}
+
+.block-system{
+  border-top: 1px solid #cecece;
+  border-bottom: 1px solid #cecece;
+  position: relative;
+  text-align: center!important;
+
+  h2{
+    display: none;
+  }
+}
+
+
+
