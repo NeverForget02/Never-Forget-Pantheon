@@ -21,25 +21,17 @@
 	text-align: center;
 }
 
-/* #content product
-   ========================================================================== */
-.container-products{
-	width: 100%;
-	text-align: center;
-	@media(min-width: 1200px) {
-		text-align: left;
-	}
-}
 
 /* #content product info
    ==========================================================================
    *these styles aplly in list.html
    */
-.field-name-field-precio{
+.views-field{
 	position: relative;
 	text-align: center;
+  width: 100%;
 
-	.field-items{
+	.field-content{
 		@include font-size(16);
 		font-family: $body;
 		color: $white;

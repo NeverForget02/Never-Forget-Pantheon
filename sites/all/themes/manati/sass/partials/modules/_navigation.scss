@@ -2,15 +2,10 @@
    Partials/Componentes/Navigation
 
    -------INDEX--------
-   #Container of navigation
-   #Navigation
+   #Menu
    ======================= */
 
-/* #Container of navigation
-   ========================================================================== */
-
-
-/* #Navigation
+/* #Menu
    ========================================================================== */
 .menu{
   padding: 20px 0;
@@ -27,4 +22,8 @@
 		color: $grey;
     text-transform: uppercase;
 	}
+}
+
+.site-name{
+  display: none;
 }
