@@ -1,0 +1,38 @@
+.comment-wrapper{
+  padding: 70px;
+
+  h2{
+    @include font-size(25);
+    color:$red;
+  }
+  label{
+    @include font-size(18);
+    font-family: $body;
+  }
+  .filter-wrapper{
+    display: none;
+  }
+  textarea{
+    height: 250px;
+    border: 2px solid $grey;
+  }
+  input{
+    border: 2px solid $grey;
+
+  }
+  .form-submit{
+    font-size: 1.4rem;
+    font-family: "Raleway", sans-serif;
+    padding: 12px 30px;
+    background-color: #48AAA7;
+    color: #fff;
+    border: 0;
+    margin: 12px 0;
+  }
+  input[value="Preview"]{
+    display: none;
+  }
+  .comment-form{
+    margin-top: 40px
+  }
+}
