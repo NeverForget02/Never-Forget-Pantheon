@@ -696,17 +696,17 @@ ul {
   position: relative;
   text-align: center;
   width: 100%; }
-  .views-field .field-content {
+  .views-field .field-content a {
     font-size: 16px;
     font-size: 1.6rem;
     font-family: "Lato", sans-serif;
     color: #fff; }
     @media (min-width: 560px) {
-      .views-field .field-content {
+      .views-field .field-content a {
         font-size: 23px;
         font-size: 2.3rem; } }
     @media (min-width: 1200px) {
-      .views-field .field-content {
+      .views-field .field-content a {
         font-size: 16px;
         font-size: 1.6rem; } }
 

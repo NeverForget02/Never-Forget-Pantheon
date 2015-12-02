@@ -32,15 +32,18 @@
   width: 100%;
 
 	.field-content{
-		@include font-size(16);
-		font-family: $body;
-		color: $white;
-		@media(min-width: 560px){
-			@include font-size(23);
-		}
-		@media (min-width: 1200px){
-			@include font-size(16);
-		}
+    a{
+      @include font-size(16);
+      font-family: $body;
+      color: $white;
+      @media(min-width: 560px){
+        @include font-size(23);
+      }
+      @media (min-width: 1200px){
+        @include font-size(16);
+      }
+    }
+
 	}
 }
 
