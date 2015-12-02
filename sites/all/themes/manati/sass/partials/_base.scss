@@ -54,7 +54,7 @@ a{
   font-family: $title;
 }
 
-h2{
+h2, h1{
   @include font-size(30);
   font-family: $title;
   text-transform: uppercase;
@@ -104,4 +104,9 @@ h4{
 }
 #first-time{
   display: none;
+}
+
+//slider
+.field-content img{
+  margin: 0 !important;
 }

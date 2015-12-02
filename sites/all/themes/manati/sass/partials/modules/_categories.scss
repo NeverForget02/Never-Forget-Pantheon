@@ -10,7 +10,7 @@
 /* #Container of categories
    ========================================================================== */
 .main{
-	margin-top: 70px;
+	padding: 70px 0;
 	text-align: center;
 	@media( min-width: 560px){
 		text-align: left;
@@ -56,27 +56,42 @@
 	@media(min-width: 560px){
 		width: 40%;
 		margin-right: 31px;
-		text-align: left;
-		&:nth-child(2n+1){
+		&:nth-child(2n+2){
 			margin-right: 0;
 		}
 	}
 
 	@media (min-width: 1000px){
 		width: 25%;
-		margin-right: 180px;
+		margin-right: 50px;
+		&:nth-child(2n+2){
+			margin-right: 50px;
+		}
+		&:nth-child(1n+9){
+			margin-right: 0px;
+		}
+	}
+
+	@media (min-width: 1120px){
+		width: 25%;
+		margin-right: 85px;
+		&:nth-child(2n+2){
+			margin-right: 85px;
+		}
+		&:nth-child(1n+9){
+			margin-right: 85px;
+		}
 	}
 
 	@media (min-width: 1210px){
 		width: 21%;
 		margin-right: 30px;
-		&:nth-child(3n+1){
+		&:nth-child(2n+2){
 			margin-right: 30px;
 		}
-		&:nth-child(2n+1){
+		&:nth-child(1n+9){
 			margin-right: 30px;
 		}
-
 		&:nth-child(4n+4){
 			margin-right:0;
 		}
@@ -97,28 +112,4 @@
 	color: $red;
 }
 
-/* #Content text and triangle
-   ========================================================================== */
-.content-category-text{
-	position: relative;
-	background-color: $turquoise;
-	top: -3px;
-	width: 100%;
-	padding: 10px;
 
-	p{
-
-	}
-}
-
-.triangle{
-	width: 0;
-	height: 0;
-	border-style: solid;
-	border-width: 0 21.5px 26px 21.5px;
-	border-color: transparent transparent $turquoise transparent;
-	position: absolute;
-	top: -20px;
-	left: 20px;
-
-}

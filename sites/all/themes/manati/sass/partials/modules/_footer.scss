@@ -3,8 +3,6 @@
 
    -------INDEX--------
    #Container of Footer
-   #Logo Footer
-   #Socials Networks
    ======================= */
 
 /* #Container of Footer
@@ -13,45 +11,9 @@
 	background-color: $black;
 	width: 100%;
 	padding: 23px 0;
+
+  .block-system{
+    border: 0;
+  }
 }
 
-.content-footer{
-
-}
-/* #Logo Footer
-   ========================================================================== */
-.content-logo-footer{
-
-	margin-top: 10px;
-
-	p{
-		color: $white;
-	}
-}
-
-.logo-footer{
-	font-family: $logo;
-}
-
-/* #Socials Networks
-   ========================================================================== */
-.content-rss{
-	text-align: right;
-
-	a{
-		margin-right: 15px;
-    &:last-child{
-    	margin-right: 0;
-    }
-	}
-
-	img{
-		width: 27%;
-		@media(min-width: 560px){
-			width: 11%;
-		}
-		@media(min-width: 1000px){
-			width: 8%;
-		}
-	}
-}

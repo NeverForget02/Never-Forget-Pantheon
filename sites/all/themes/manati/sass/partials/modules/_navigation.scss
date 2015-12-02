@@ -3,17 +3,33 @@
 
    -------INDEX--------
    #Menu
+   #menu movil
    ======================= */
 
 /* #Menu
    ========================================================================== */
 .menu{
+  display: none;
   padding: 20px 0;
-  text-align: center!important;
+  text-align: left;
+  @media(min-width: 1000px){
+    text-align: center!important;
+    display: block;
+  }
 
   li{
-    display: inline-block;
-    vertical-align: top;
+    padding: 10px 0;
+    @media(min-width: 1000px){
+      display: inline-block;
+      vertical-align: top;
+      padding: 10px 0;
+      margin: 0 !important;
+    }
+
+  }
+  .leaf{
+    list-style-image: none !important;
+    list-style-type: none !important;
   }
 
 	a{
@@ -21,6 +37,7 @@
 		margin-left: 20px;
 		color: $grey;
     text-transform: uppercase;
+    list-style: none;
 	}
 }
 
@@ -32,12 +49,74 @@
   position: relative;
 
   .menu{
-    display: none;
-    background-color: $black;
-    position: absolute;
+    border-left: 1px solid $red;
+    margin-left: 23px;
+    @media(min-width: 1000px){
+      display: none;
+      padding: 20px 40px;
+      background-color: $black;
+      position: absolute;
+      text-align: left !important;
+      z-index: 3;
+    }
 
     a{
-      color: $white;
+      color: $grey;
+      margin-bottom: 2px;
+      @media(min-width: 1000px){
+        color: $white;
+        margin: 0;
+        &:hover{
+          color: $red;
+        }
+      }
+
+    }
+    li{
+      text-align: left;
+      @media(min-width: 1000px){
+        display: inline-block;
+      }
     }
   }
+}
+@media(min-width: 1000px){
+  .navBlock{
+    display: block !important;
+  }
+  .navNone{
+    display: none;
+  }
+}
+@media(max-width: 1000px){
+  .displayblock{
+    display: block;
+  }
+}
+/* #Menu movil
+   ========================================================================== */
+.btn-menu{
+  @include font-size(100);
+  display: inline-block;
+  position: absolute;
+  float: right;
+  right: 20px;
+  top: 49px;
+  width: 50px;
+  padding: 5px 10px;
+  margin: 0;
+  border: 1px solid #ddd;
+  background: transparent;
+  border-radius: 4px;
+  @media (min-width: 1000px){
+    display: none;
+  }
+
+}
+.icon-bar{
+   display: block;
+    width: 100%;
+    border: 2px solid #888;
+    border-radius: 1px;
+    margin: 6px 0;
 }
