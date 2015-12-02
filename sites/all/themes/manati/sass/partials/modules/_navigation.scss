@@ -27,3 +27,17 @@
 .site-name{
   display: none;
 }
+
+.expanded{
+  position: relative;
+
+  .menu{
+    display: none;
+    background-color: $black;
+    position: absolute;
+
+    a{
+      color: $white;
+    }
+  }
+}

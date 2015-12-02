@@ -214,26 +214,26 @@ body {
   padding: 0;
   margin: 0; }
 
-.main-content {
+.main-content, .below-content {
   max-width: 798px;
   margin: 0 auto; }
   @media (min-width: 319px) {
-    .main-content {
+    .main-content, .below-content {
       max-width: 340px; } }
   @media (min-width: 420px) {
-    .main-content {
+    .main-content, .below-content {
       max-width: 500px; } }
   @media (min-width: 560px) {
-    .main-content {
+    .main-content, .below-content {
       max-width: 527px; } }
   @media (min-width: 680px) {
-    .main-content {
+    .main-content, .below-content {
       max-width: 560px; } }
   @media (min-width: 780px) {
-    .main-content {
+    .main-content, .below-content {
       max-width: 798px; } }
   @media (min-width: 1000px) {
-    .main-content {
+    .main-content, .below-content {
       max-width: 1090px; } }
 
 p {
@@ -319,6 +319,15 @@ h4 {
 
 .site-name {
   display: none; }
+
+.expanded {
+  position: relative; }
+  .expanded .menu {
+    display: none;
+    background-color: #141414;
+    position: absolute; }
+    .expanded .menu a {
+      color: #fff; }
 
 /* ==|====================
    Partials/Modules/Navigation
@@ -720,7 +729,7 @@ ul {
    ======================= */
 /* #related
    ========================================================================== */
-.products {
+.block-views {
   margin: 70px 0;
   width: 100%; }
 
@@ -748,14 +757,14 @@ ul {
   .view-productos-recientes .views-row {
     display: inline-block;
     width: 80%;
-    height: 250px;
+    height: 217px;
     vertical-align: top;
     margin-top: 20px;
     margin-right: 0;
     background-color: #DA5029;
     box-shadow: 0 0 4px #000; }
     .view-productos-recientes .views-row img {
-      width: 56%;
+      width: 46%;
       height: 200px;
       float: left; }
       @media (min-width: 560px) {
@@ -766,7 +775,7 @@ ul {
           height: 250px; } }
       @media (min-width: 1200px) {
         .view-productos-recientes .views-row img {
-          height: 250px; } }
+          height: 217px; } }
     @media (min-width: 560px) {
       .view-productos-recientes .views-row {
         width: 55%;
@@ -779,10 +788,14 @@ ul {
           margin-right: 0; } }
     @media (min-width: 1200px) {
       .view-productos-recientes .views-row {
-        width: 40%;
+        width: 30%;
         margin-right: 60px; }
+        .view-productos-recientes .views-row:nth-child(2n+2) {
+          margin-right: 26px; }
         .view-productos-recientes .views-row:nth-child(3n+1) {
-          margin-right: 60px; } }
+          margin-right: 26px; }
+        .view-productos-recientes .views-row:nth-child(1n+3) {
+          margin-right: 0px; } }
 
 /* ==|====================
    Partials/Modules/description

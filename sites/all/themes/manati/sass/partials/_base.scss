@@ -15,7 +15,7 @@ body {
   padding: 0;
   margin: 0;
 }
-.main-content{
+.main-content, .below-content{
   max-width: $tablet;
   margin: 0 auto;
   @media(min-width: 319px){
