@@ -17,7 +17,8 @@
 }
 
 .product-title{
-	color: $turquoise;
+	color: $white;
+	text-align: center;
 }
 
 /* #content product
@@ -34,11 +35,11 @@
    ==========================================================================
    *these styles aplly in list.html
    */
-.content-product-info{
+.field-name-field-precio{
 	position: relative;
 	text-align: center;
 
-	span{
+	.field-items{
 		@include font-size(16);
 		font-family: $body;
 		color: $white;

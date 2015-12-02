@@ -188,8 +188,6 @@ table {
 
 input[type="search"] {
   -webkit-appearance: textfield;
-  -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
   box-sizing: content-box; }
   input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
     -webkit-appearance: none; }
@@ -506,8 +504,6 @@ ul {
   height: 25px;
   width: 25px;
   margin: 0 6px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
   border-radius: 50%; }
   @media (min-width: 560px) {
     .slider-controls li {
@@ -665,7 +661,8 @@ ul {
   padding: 70px 0; }
 
 .product-title {
-  color: #48AAA7; }
+  color: #fff;
+  text-align: center; }
 
 /* #content product
    ========================================================================== */
@@ -680,20 +677,20 @@ ul {
    ==========================================================================
    *these styles aplly in list.html
    */
-.content-product-info {
+.field-name-field-precio {
   position: relative;
   text-align: center; }
-  .content-product-info span {
+  .field-name-field-precio .field-items {
     font-size: 16px;
     font-size: 1.6rem;
     font-family: "Lato", sans-serif;
     color: #fff; }
     @media (min-width: 560px) {
-      .content-product-info span {
+      .field-name-field-precio .field-items {
         font-size: 23px;
         font-size: 2.3rem; } }
     @media (min-width: 1200px) {
-      .content-product-info span {
+      .field-name-field-precio .field-items {
         font-size: 16px;
         font-size: 1.6rem; } }
 
@@ -723,13 +720,14 @@ ul {
 .node-producto {
   display: inline-block;
   width: 80%;
+  height: 250px;
   vertical-align: top;
   margin-top: 20px;
   margin-right: 0;
   background-color: #DA5029;
   box-shadow: 0 0 4px #000; }
   .node-producto img {
-    width: 47%;
+    width: 100%;
     height: 200px; }
     @media (min-width: 560px) {
       .node-producto img {
@@ -753,14 +751,11 @@ ul {
   @media (min-width: 1200px) {
     .node-producto {
       width: 30%;
-      margin-right: 42px; }
+      margin-right: 60px; }
       .node-producto:nth-child(2n+2) {
-        margin-right: 42px; }
-      .node-producto:nth-child(3n+3) {
+        margin-right: 60px; }
+      .node-producto:nth-child(3n+1) {
         margin-right: 0; } }
-  @media (min-width: 1025px) {
-    .node-producto {
-      margin-right: 42px; } }
 
 .btn-product {
   background-color: #DA5029;
@@ -911,5 +906,4 @@ ul {
     @media (min-width: 1000px) {
       .content-rss img {
         width: 8%; } }
-
 /*# sourceMappingURL=style.css.map */
